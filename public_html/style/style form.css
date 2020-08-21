@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 24, 2019, 9:16:32 AM
+    Author     : DIENMAYXANH
+*/
+body{
+    margin: 3px;
+    padding: 5px;
+    border: 1px #3300ff solid;
+}
+header{
+padding: 1em 0 1em 0;
+font-size: 125%;
+background-color: aqua;
+border-bottom: 2px solid darkred;
+}
+header img{
+    float: left;
+}
+header>h1,h2{
+    color: palevioletred;
+}
+header h3{
+   margin-bottom: 0;
+   padding-top: 4em;
+   padding-right: 2em;
+   color: darkblue;
+   text-shadow: 3px yellow;
+}
+/* style for footer */
+footer{
+    border-bottom: 5px solid brown;
+    text-align: center;}
+/* style for nav_menu */
+#nav_menu{
+  margin: .5px;
+  overflow: hidden;
+  background-color: #3300ff;
+  width: 100%;
+}
+#nav_menu ul{
+    margin: 15px;
+    padding-bottom: 15px;
+}
+#nav_menu ul li{
+    list-style-type:none;
+    float: left; 
+    width:14.2%;}
+#nav_menu ul li a{
+text-align: center;
+display: block;
+width: 100%;
+padding: 5px;
+text-decoration: none;
+color: white;
+font-size: 100%;
+font-weight: bold;
+}
+#nav_menu ul li a:hover{
+    color: palevioletred;
+}
+#s1{
+float: left;
+font-size: 155%;
+color: blue;
+}
+#s1 ul{
+    list-style-type: none;
+}
+#s1 ul li a{
+    text-decoration: none;
+}
+#s1 h3 a{
+    text-decoration: none;
+}
+#s1 h3 a:hover{
+    background-color: activeborder;
+    color: palevioletred;
+}
+/* style for form */
+.form-regis{
+    width: 60%;
+    padding: 1.5em;
+    border-bottom: 3px solid brown;
+    float: right;  
+}
+.form-regis h1{
+    color: red;
+    text-align: center;
+    text-shadow: 15px aquamarine;
+}
+legend{
+    font-weight: bold;
+    color: blue;
+}
+

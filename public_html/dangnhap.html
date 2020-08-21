@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ĐĂNG NHẬP / ĐĂNG KÝ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style/style form.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="image/shorcut_icon.ico">
+    </head>
+    <body>
+        <header>
+            <a href="home.html"><img src="image/logo name.png" alt="" height="120"></a>
+            <h3 style="float: right">Hotline: <br> 0948 445 855</h3>
+            <h1>Siêu thị fifty</h1>
+            <h2>An tâm mua sắm - chia sẽ yêu thương</h2>           
+        </header>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="home.html">TRANG CHỦ</a></li>
+                <li><a href="about us.html">VỀ CHÚNG TÔI</a></li>
+                <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="chi nhanh.html">CHI NHÁNH</a></li>
+                <li><a href="hoatdong.html">HOẠT ĐỘNG XÃ HỘI</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                <li><a href="dangnhap.html">ĐĂNG KÝ</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="s1">
+                <h2>Danh mục các sản phẩm</h2>
+                <ul>
+                    <li><a href="#">Trái cây bốn mùa</a></li>
+                    <li><a href="#">Thực phẩm tươi đã sơ chế</a></li>
+                    <li><a href="#">Gia vị - Đồ hộp</a></li>
+                    <li><a href="#">Sữa - bánh - kẹo</a></li>
+                    <li><a href="#">Các loại đồ uống</a></li>
+                    <li><a href="#">Góc mẹ và bé</a></li>
+                    <li><a href="#">Gian hàng bách hóa</a></li>
+                </ul>
+                <h3><a href="home.html">Quay Lại Trang Chủ</a>
+            </section>
+            <div class="form-regis">
+<!-- form for login             -->
+                <h1>Đăng Nhập</h1>
+                <fieldset id="login">
+                    <legend>ĐĂNG NHẬP</legend>
+                    <form action="login" method="post"> 
+                        <label for="User">Tên Đăng Nhập:</label><br/>
+                        <input type="text" name="user" id="user" required><br/>
+                        <label for="password">Mật khẩu:</label><br/>
+                        <input type="password" name="password" id="password" required><br/> 
+                        <input type="submit" name="submit" id="submit" value="Đăng Nhập" onclick="location.href='home.html'">
+                    </form>
+                </fieldset><br/>
+<!-- form for register            -->
+                <h1>Đăng Ký Mới</h1>
+                <fieldset>
+                    <legend>THÔNG TIN</legend>
+                    <form action="register" method="post">
+                        <label for="User">Tên Đăng Nhập:</label><br/>
+                        <input type="text" name="user" required><br/>
+                        <label for="password">Mật Khẩu:</label><br/>
+                        <input type="password" name="password" required
+                               placeholder="ít nhất 6 ký tự"
+                               pattern="[a-zA-Z0-9]{6,}" title="bạn phải nhập ít nhất 6 kí tự chữ số"><br/>
+                        <label for="verify">Nhập Lại Mật Khẩu:</label><br/>
+                        <input type="password" name="verify" id="verify" required><br/>
+                        <label for="email">Email:</label><br/>
+                        <input type="email" name="email"><br/>
+                        <label for="gender">Giới Tính:</label><br/>
+                        <label> <input type="radio" name="gender" checked>Nam</label><br/>
+                        <label> <input type="radio" name="gender">Nữ</label><br/>
+                        <label> <input type="radio" name="gender">Khác</label><br/>
+                        <label for="bdate">Ngày Sinh:</label><br/>
+                        <input type="date" name="date"><br/>
+                        <input type="submit" value="Đăng Ký">&nbsp &nbsp
+                        <input type="reset" name="reset" id="reset" value="Nhập Lại">
+                    </form>
+                </fieldset>
+            </div>
+        </main>
+    </body>
+</html>
